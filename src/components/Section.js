@@ -2,8 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import carDetail from "../carInfo.json";
 function Section() {
+  const scrollToNextSection = (e) => {
+    const nextSection = e.target;
+    nextSection.scrollIntoView({ behavior: "smooth" });
+  };
   const itemDetails = carDetail.map((data) => (
-    <Wrap key={data.id} bgimage={data.image}>
+    <Wrap key={data.id} bgimage={data.image} id={data.title}>
       <ItemText>
         <h1>{data.title}</h1>
         <p>{data.description}</p>
@@ -13,7 +17,11 @@ function Section() {
           <LeftButton>Custom Order</LeftButton>
           <RightButton>Existing Inventory</RightButton>
         </ButtonGroup>
-        <DownArrow src="/images/down-arrow.svg" alt="down-arrow" />
+        <DownArrow
+          src="/images/down-arrow.svg"
+          alt="down-arrow"
+          onClick={scrollToNextSection}
+        />
       </Buttons>
     </Wrap>
   ));
@@ -27,7 +35,7 @@ const Wrap = styled.div`
   height: 100vh;
   background-size: cover;
   background-position: center;
-  background-image: ${props => `url("/images/${props.bgimage}")`};
+  background-image: ${(props) => `url("/images/${props.bgimage}")`};
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -37,6 +45,13 @@ const Wrap = styled.div`
 const ItemText = styled.div`
   padding: 15vh;
   text-align: center;
+
+  @media (max-width: 768px) {
+    padding: 7vh;
+    text-align: center;
+    position : relative;
+    top:85px;
+  }
 `;
 const Buttons = styled.div``;
 const ButtonGroup = styled.div`
@@ -70,4 +85,5 @@ const DownArrow = styled.img`
   height: 40px;
   animation: animateDown infinite 1.5s;
   overflow-x: hidden;
+  cursor: pointer;
 `;
