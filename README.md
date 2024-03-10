@@ -10,7 +10,6 @@ This is a clone of the Tesla website built using React.
 
 ## Usage
 To start the development server, run the following command:
-```bash
 npm start
 
 ## Scripts
