@@ -49,11 +49,15 @@ const ItemText = styled.div`
   @media (max-width: 768px) {
     padding: 7vh;
     text-align: center;
-    position : relative;
-    top:85px;
+    position: relative;
+    top: 85px;
   }
 `;
-const Buttons = styled.div``;
+const Buttons = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+`;
 const ButtonGroup = styled.div`
   display: flex;
   margin: 40px;

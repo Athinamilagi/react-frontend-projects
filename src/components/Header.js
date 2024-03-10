@@ -109,11 +109,11 @@ const RightMenu = styled.div`
   a {
     padding: 0 10px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     a {
       padding: 0 5px;
     }
-    font-size: 14px;
+    font-size: 12px;
   }
 `;
 const CustomMenu = styled.img`
