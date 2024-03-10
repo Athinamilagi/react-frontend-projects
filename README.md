@@ -1,46 +1,38 @@
-# Getting Started with Create React App and Redux
+# Tesla Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+## Description
+This is a clone of the Tesla website built using React.
 
-## Available Scripts
+## Installation
+1. Clone the repository: `git clone https://github.com/yourusername/tesla-clone.git`
+2. Navigate to the project directory: `cd tesla-clone`
+3. Install dependencies: `npm install`
 
-In the project directory, you can run:
+## Usage
+To start the development server, run the following command:
+```bash
+npm start
 
-### `npm start`
+## Scripts
+- `npm start`: Runs the app in development mode.
+- `npm build`: Builds the app for production to the build folder.
+- `npm test`: Launches the test runner in interactive watch mode.
+- `npm eject`: Removes the single build dependency from your project.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Dependencies
+- @reduxjs/toolkit: ^1.9.7
+- @testing-library/jest-dom: ^5.17.0
+- @testing-library/react: ^13.4.0
+- @testing-library/user-event: ^14.5.1
+- react: ^18.2.0
+- react-dom: ^18.2.0
+- react-scripts: 5.0.1
+- react-scroll: ^1.9.0
+- styled-components: ^6.1.6
+- web-vitals: ^2.1.4
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Live Demo
+Check out the live demo site [here](https://tesla-clone-pied-nine.vercel.app/).
